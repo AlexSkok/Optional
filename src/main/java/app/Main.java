@@ -1,7 +1,13 @@
 package app;
 
+
+import app.user.UserRepository;
+
+import java.util.HashMap;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        UserRepository userRepository = new UserRepository();
+        userRepository.findUserById(33);
     }
 }

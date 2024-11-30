@@ -8,6 +8,8 @@ import java.util.HashMap;
 public class Main {
     public static void main(String[] args) {
         UserRepository userRepository = new UserRepository();
-        userRepository.findUserById(33);
+        userRepository.findUserById(1);
+        userRepository.findUserByEmail("olexiy@gmail.com");
+        userRepository.findAllUsers();
     }
 }

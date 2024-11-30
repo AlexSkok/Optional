@@ -20,6 +20,7 @@ public class UserRepository {
        Stream<User> userStream = userList.stream()
                .filter(user -> user.getId() == optionalId.get());
        System.out.println("Optional за ID: " + id + " - " + userStream.findAny());
+       System.out.println();
    }
 //    by email
     public void findUserByEmail(String email){
@@ -27,13 +28,13 @@ public class UserRepository {
         Stream<User> userStream = userList.stream()
                 .filter(user -> user.getEmail().equals(optionalEmail.get()));
         System.out.println("Optional за email: " + email + " - " + userStream.findAny());
+        System.out.println();
     }
 //    all users
     public void findAllUsers(){
         Optional<List<User>> listOptional = Optional.ofNullable(userList);
         int countUser = listOptional.get().size();
-        System.out.println("Весь список/n");
-        System.out.println("All users: " + listOptional);
+        System.out.println("Весь список: " + listOptional);
         System.out.println("Кількість юзерів у списку " + countUser);
     }
 }

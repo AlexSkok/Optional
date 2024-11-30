@@ -25,6 +25,6 @@ public class User {
 
     @Override
     public String toString() {
-        return "ID: " + this.id + " , name: " + this.name + ", email: " + this.email;
+        return "\nID: " + this.id + " , name: " + this.name + ", email: " + this.email +"\n";
     }
 }

@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         UserRepository userRepository = new UserRepository();
         userRepository.findUserById(1);
-        userRepository.findUserByEmail("olexiy@gmail.com");
+        userRepository.findUserByEmail("petro@gmail.com");
         userRepository.findAllUsers();
     }
 }

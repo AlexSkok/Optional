@@ -13,7 +13,7 @@ public class UserRepository {
     User user4 = new User(4, "Vasyl", "vasyl@gmail.com");
 
     List<User> userList = Arrays.asList(user1, user2, user3, user4);
-//    by name
+//    by id
    public void findUserById(int id){
        Optional<Integer> optionalId = Optional.of(id);
        Stream<User> userStream = userList.stream()
